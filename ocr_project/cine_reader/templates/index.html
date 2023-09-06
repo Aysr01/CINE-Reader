@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINE Reader</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+</head>
+<body>
+    {% include 'partials/_header.html'%}
+    <div class="form">
+    <form action="" method="post" enctype="multipart/form-data">
+        <div class="form-container">
+            {% csrf_token %}
+            <div class="id_recto input-container">
+              <h1>Recto</h1>
+              <div class="image-container">
+                <img src="{% static 'images/id-card.png'%}" alt="id-card">
+              </div>
+                <p>
+                <label for="id_recto">
+                upload image
+                {{form.recto}}
+                </label>
+                <img src="{% static 'images/pngegg.png'%}" alt="rotate">
+                </p>
+            </div>
+            <div class="id_verso input-container">
+                <h1>Verso</h1>
+                <div class="image-container">
+                  <img src="{% static 'images/id-card2.png'%}" alt="id-card">
+                </div>
+                <p>
+                  <label for="id_verso">
+                  upload image
+                  {{form.verso}}
+                  </label>
+                  <img src="{% static 'images/pngegg.png'%}" alt="rotate">
+                </p>
+            </div>
+            <div style="display: none;">{{form.rot}}</div>
+        </div>
+        <input type="submit" value="start reading">
+    </form>
+    <div class="load">
+      <img src="{% static 'images/Rolling-1s-200px.gif' %}" alt="loader">
+    </div>
+</body>
+
+<script src="{% static 'js/image_processing.js'%}"></script>
+</html>

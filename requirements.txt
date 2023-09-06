@@ -1,0 +1,7 @@
+django
+pillow==9.4.0
+opencv-python
+numpy
+ultralytics
+easyocr
+mysqlclient

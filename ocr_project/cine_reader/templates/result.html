@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/result.css'%}">
+    <title>CINE OCR</title>
+</head>
+<body>
+    {% include 'partials/_header.html'%}
+    <div class="output">
+        <a href="{% static 'images/pdc.png'%}" download>
+        <img src="{% static 'images/pdc.png'%}" alt="photo de la carte nationale">
+        </a>
+        <p>
+            <label for="name">name</label>
+            <input type="text" value= "{{output.name}}" >
+        </p>
+        <p>
+                <label for="date">birth date</label>
+                <input type="text" value= "{{output.birth_date}}" >
+        </p>
+        <p>
+            <label for="cin">CIN</label>
+            <input type="text" value= "{{output.cin}}" >
+        </p>
+        <p>
+            <label for="adress">Adress</label>
+            <input type="text" value= "{{output.adresse}}" >
+        </p>
+    </div>
+</body>
+</html>
