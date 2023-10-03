@@ -59,6 +59,7 @@ class CineReader:
                         text = text1 + " " + text2
                     elif cl == 2.0:
                         text, _ = self.read_text(cutted_image, self.ocr, "0123456789.")
+                        text = text.replace(".","/")
                     elif cl == 3.0:
                         text, conf = self.read_text(cutted_image, self.ocr, "ABCDEFGHIJKLMNOPQRSTVUWXYZ0123456789")
                         if best_conf_cin == []:
