@@ -25,7 +25,9 @@ To run CINE-Reader on your laptop you should do the following steps:
 ## 4. Pipline
 The process of extracting personal information from the identity card goes through several steps.
 ### 4.1. Detecting The Regions Of Interest
-![272927175-d574e294-7f76-46ab-900d-0534143db23b](https://github.com/Aysr01/CINE-Reader/assets/114707989/fd2d099c-c63c-4f52-96da-9122d2a36a94)
+
+<img src="https://github.com/Aysr01/CINE-Reader/assets/114707989/fd2d099c-c63c-4f52-96da-9122d2a36a94" alt="identity card image" width="600">
+
 ### 4.2. Image Processing
 
 After detecting and cropping the regions of interest, a bilateral filter and grayscale transformation will be applied to the cropped images in order to reduce noise and enhance the images' features. This preprocessing step is essential for facilitating the text extraction process by improving the image quality and simplifying the color information.
