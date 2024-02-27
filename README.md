@@ -26,7 +26,7 @@ To run CINE-Reader on your laptop you should do the following steps:
 The process of extracting personal information from the identity card goes through several steps.
 ### 4.1. Detecting The Regions Of Interest
 
-<img src="https://github.com/Aysr01/CINE-Reader/assets/114707989/fd2d099c-c63c-4f52-96da-9122d2a36a94" alt="identity card image" width="600">
+<img src="https://github.com/Aysr01/CINE-Reader/assets/114707989/fd2d099c-c63c-4f52-96da-9122d2a36a94" alt="identity card image" width="800">
 
 ### 4.2. Image Processing
 
